@@ -72,7 +72,7 @@ export default function About() {
             <p className="about-card-text">
               From morning workouts to tech vlogs to weekend road trips — if it's part of the grind, it's on camera.
             </p>
-            <a
+            
               href="https://www.youtube.com/@NITianGurdeep"
               target="_blank"
               rel="noreferrer"
@@ -88,18 +88,41 @@ export default function About() {
 
         {/* Stats Row */}
         <div className="stats-row" ref={statsRef}>
-          {stats.map((stat, i) => (
-            <div
-              key={stat.label}
-              className={`stat-item fade-in ${statsVisible ? 'visible' : ''}`}
-              style={{ transitionDelay: `${i * 0.1}s` }}
-            >
-              <div className="stat-value">
-                <CountUp end={stat.value} suffix={stat.suffix} start={statsVisible} />
+          {stats.map((stat, i) => {
+            // Special case — LeetCode shows image instead of counter
+            if (stat.label === 'LeetCode Problems') {
+              return (
+                
+                  key={stat.label}
+                  href="https://leetcode.com/u/gurdeep2001/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`stat-item stat-leetcode fade-in ${statsVisible ? 'visible' : ''}`}
+                  style={{ transitionDelay: `${i * 0.1}s` }}
+                >
+                  <img
+                    src="/images/leetcode-stats.png"
+                    alt="LeetCode Stats"
+                    className="leetcode-stats-img"
+                  />
+                  <span className="leetcode-hover-label">View Profile →</span>
+                </a>
+              );
+            }
+
+            return (
+              <div
+                key={stat.label}
+                className={`stat-item fade-in ${statsVisible ? 'visible' : ''}`}
+                style={{ transitionDelay: `${i * 0.1}s` }}
+              >
+                <div className="stat-value">
+                  <CountUp end={stat.value} suffix={stat.suffix} start={statsVisible} />
+                </div>
+                <div className="stat-label">{stat.label}</div>
               </div>
-              <div className="stat-label">{stat.label}</div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

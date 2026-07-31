@@ -169,3 +169,46 @@
 @media (max-width: 480px) {
   .stats-row { grid-template-columns: 1fr 1fr; }
 }
+
+.stat-leetcode {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.stat-leetcode:hover {
+  background: var(--surface2);
+}
+
+.leetcode-stats-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.stat-leetcode:hover .leetcode-stats-img {
+  opacity: 0.7;
+}
+
+.leetcode-hover-label {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--amber);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: var(--font-mono);
+}
+
+.stat-leetcode:hover .leetcode-hover-label {
+  opacity: 1;
+}

@@ -16,6 +16,35 @@ export const stats = [
   { label: "NIT Trichy MCA", value: 2025, suffix: "" },
 ];
 
+// export const skills = {
+//   Frontend: [
+//     { name: "React.js", color: "#61dafb" },
+//     { name: "Blazor", color: "#8b5cf6" },
+//     { name: "HTML5", color: "#e34f26" },
+//     { name: "CSS3", color: "#1572b6" },
+//     { name: "JavaScript", color: "#f7df1e" },
+//   ],
+//   Backend: [
+//     { name: "Java", color: "#f89820" },
+//     { name: "Spring Boot", color: "#6db33f" },
+//     { name: "Node.js", color: "#339933" },
+//     { name: "C#", color: "#239120" },
+//     { name: ".NET", color: "#512bd4" },
+//     { name: "REST API", color: "#14b8a6" },
+//   ],
+//   Database: [
+//     { name: "MySQL", color: "#4479a1" },
+//     { name: "MongoDB", color: "#47a248" },
+//     { name: "PostgreSQL", color: "#336791" },
+//   ],
+//   Tools: [
+//     { name: "Git", color: "#f05032" },
+//     { name: "Docker", color: "#2496ed" },
+//     { name: "Camunda BPMN", color: "#fc5d0d" },
+//     { name: "Postman", color: "#ff6c37" },
+//     { name: "VS Code", color: "#007acc" },
+//   ],
+// };
 export const skills = {
   Frontend: [
     { name: "React.js", color: "#61dafb" },
@@ -23,8 +52,18 @@ export const skills = {
     { name: "HTML5", color: "#e34f26" },
     { name: "CSS3", color: "#1572b6" },
     { name: "JavaScript", color: "#f7df1e" },
-    { name: "TypeScript", color: "#3178c6" },
+    { name: "Flutter", color: "#02569b" },
+    { name: "Dart", color: "#0175c2" },
+    { name: "BLoC Pattern", color: "#40c4ff" },
+    { name: "GoRouter", color: "#54c5f8" },
+    { name: "Dio", color: "#5e35b1" },
+    { name: "Socket.io Client", color: "#010101" },
+    { name: "flutter_animate", color: "#00bcd4" },
+    { name: "flutter_secure_storage", color: "#1565c0" },
+    { name: "Google Fonts", color: "#4285f4" },
+    { name: "Clean Architecture", color: "#6366f1" },
   ],
+
   Backend: [
     { name: "Java", color: "#f89820" },
     { name: "Spring Boot", color: "#6db33f" },
@@ -32,19 +71,32 @@ export const skills = {
     { name: "C#", color: "#239120" },
     { name: ".NET", color: "#512bd4" },
     { name: "REST API", color: "#14b8a6" },
+    { name: "Express.js", color: "#000000" },
+    { name: "TypeScript", color: "#3178c6" },
+    { name: "Socket.io", color: "#010101" },
+    { name: "Prisma ORM", color: "#2d3748" },
+    { name: "JWT", color: "#d63aff" },
+    { name: "bcryptjs", color: "#f59e0b" },
+    { name: "Zod", color: "#3068b7" },
+    { name: "Helmet", color: "#111827" },
+    { name: "express-rate-limit", color: "#ef4444" },
   ],
+
   Database: [
     { name: "MySQL", color: "#4479a1" },
     { name: "MongoDB", color: "#47a248" },
     { name: "PostgreSQL", color: "#336791" },
+    { name: "Redis", color: "#dc382d" },
   ],
+
   Tools: [
     { name: "Git", color: "#f05032" },
     { name: "Docker", color: "#2496ed" },
     { name: "Camunda BPMN", color: "#fc5d0d" },
-    { name: "SignalR", color: "#8b5cf6" },
     { name: "Postman", color: "#ff6c37" },
     { name: "VS Code", color: "#007acc" },
+    { name: "Nodemon", color: "#76d04b" },
+    { name: "ts-node", color: "#3178c6" },
   ],
 };
 
@@ -95,28 +147,28 @@ export const projects = [
     color: "#8b5cf6",
   },
   {
-    name: "RISHI Dashboard",
-    description: "Enterprise MySpace analytics dashboard with real-time drag-and-drop chart creation, multi-data-source support, and SignalR-powered live updates.",
-    tech: ["Blazor", ".NET", "SignalR", "Telerik", "C#", "MySQL"],
+    name: "RISHI Application",
+    description: "Enterprise-grade notification and workflow platform built at Proclink. Includes a centralized notification framework with dynamic email template processing, mergefield parsing, and configurable header/footer rendering. Features the MySpace Dashboard with personalized workspace management, real-time alerts, pinned workflows, and interactive visualizations.",
+    tech: ["C#", ".NET Blazor", "Java", "Spring Boot", "Camunda BPM", "MySQL", "Telerik UI", "Plotly.js"],
     github: "#",
     live: "#",
     featured: false,
     color: "#14b8a6",
   },
   {
-    name: "LeetCode Tracker",
-    description: "Personal progress tracker for competitive programming — logs problems, tags, difficulty, and generates visual reports of your DSA journey.",
-    tech: ["React.js", "Node.js", "MongoDB", "Chart.js"],
-    github: "https://github.com/gurdeepsingh/lc-tracker",
+    name: "Real Estate",
+    description: "A modern real estate marketplace where sellers can create visually appealing property listings with image upload. Features advanced search filtering by location, price, and type, Google OAuth authentication, and full profile management for creating, updating, and deleting listings.",
+    tech: ["React.js", "Redux Toolkit", "Node.js", "MongoDB", "Tailwind CSS"],
+    github: "https://github.com/gurdeep2001/Real_estate",
     live: "#",
     featured: false,
-    color: "#3b82f6",
+    color: "#14b8a6",
   },
   {
     name: "Campus Connect",
     description: "College networking app that connects students, alumni, and faculty for mentorship, job referrals, and knowledge sharing.",
-    tech: ["React", "Spring Boot", "MySQL", "JWT"],
-    github: "https://github.com/gurdeepsingh/campus-connect",
+    tech: ["Flutter", "Dart", "BLoC Pattern", "GoRouter", "Socket.io", "Node.js","Express.js", "TypeScript", "Prisma ORM","PostgreSQL", "Redis", "JWT", "Docker"],
+    github: "https://github.com/gurdeep2001/Anonymous_Chat_App",
     live: "#",
     featured: false,
     color: "#f59e0b",

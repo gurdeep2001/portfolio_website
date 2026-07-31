@@ -94,7 +94,7 @@ export default function About() {
               return (
                 <a
                   key={stat.label}
-                  href="https://leetcode.com/u/gurdeep2001/"
+                  href="https://leetcode.com/u/08_gurdeep/"
                   target="_blank"
                   rel="noreferrer"
                   className={`stat-item stat-leetcode fade-in ${
